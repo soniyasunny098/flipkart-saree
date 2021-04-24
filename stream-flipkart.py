@@ -23,10 +23,10 @@ def run():
     add_selectbox = st.sidebar.selectbox(
     "How would you like to predict?",
     ("Online", "Batch"))
-    st.sidebar.info('This app is created to predict OFFER of sarees ')
+    st.sidebar.info('This app is created to predict saree offers ')
     st.sidebar.success('https://www.pycaret.org')
     st.sidebar.image(image_office)
-    st.title("Predicting OFFER of sarees")
+    st.title("Predicting saree OFFER")
     if add_selectbox == 'Online':
         product_name = st.selectbox('product_name', ['other', 'Printed Daily Wear','Woven','Solid Fashion','Self Design'])
         brand_name = st.selectbox('brand_name', ['other', 'SAARA','Ad SAREES','KARA','VeBNoR'])
